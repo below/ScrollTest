@@ -15,20 +15,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oj4-Na-woL">
-                                <rect key="frame" x="37" y="92" width="348" height="764"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pzg-87-n8p">
+                                <rect key="frame" x="53" y="108" width="308" height="754"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ruler_Figure" translatesAutoresizingMaskIntoConstraints="NO" id="Vcm-eV-G82">
-                                        <rect key="frame" x="20" y="20" width="308" height="1899"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ruler_Figure" translatesAutoresizingMaskIntoConstraints="NO" id="Ezm-pH-Tj4">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="1899"/>
                                     </imageView>
                                 </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="5Xp-Eo-bBE"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="JAB-E6-ULb"/>
+                                <constraints>
+                                    <constraint firstItem="Ezm-pH-Tj4" firstAttribute="leading" secondItem="ChI-R8-49r" secondAttribute="leading" id="6Af-pm-zo7"/>
+                                    <constraint firstItem="Ezm-pH-Tj4" firstAttribute="width" secondItem="61O-XZ-Kx7" secondAttribute="width" id="IhA-3S-KnB"/>
+                                    <constraint firstItem="Ezm-pH-Tj4" firstAttribute="trailing" secondItem="ChI-R8-49r" secondAttribute="trailing" id="U34-E5-NE7"/>
+                                    <constraint firstItem="Ezm-pH-Tj4" firstAttribute="bottom" secondItem="ChI-R8-49r" secondAttribute="bottom" id="VN5-jh-G46"/>
+                                    <constraint firstItem="ChI-R8-49r" firstAttribute="top" secondItem="Ezm-pH-Tj4" secondAttribute="top" id="fL2-Qy-Koh"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ChI-R8-49r"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="61O-XZ-Kx7"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pzg-87-n8p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1lT-m5-rwe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pzg-87-n8p" secondAttribute="bottom" id="Qwg-7y-JaD"/>
+                            <constraint firstItem="Pzg-87-n8p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="oeA-Tz-XOM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
